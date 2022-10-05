@@ -63,9 +63,11 @@ class CollectionController extends Controller
             ['NamaProduk' => 'Smartphone B', 'Harga' => 5300000],
             ['NamaProduk' => 'Speaker C', 'Harga' => 350000],
         ]);
-
+        
+        // Urutkan berdasarkan key harga
         dump( $collection->sortBy('Harga') );
-
+        
+        // Urutkan berdasarkan key harga
         dump( $collection->sortByDesc('Harga') );
 
     }
